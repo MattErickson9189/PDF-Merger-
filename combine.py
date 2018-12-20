@@ -25,6 +25,8 @@ for filename in pdfFiles:
         pagesScanned = pagesScanned+1
         print(pagesScanned)
 
-pdfOutput = open('mergedPDF.pdf', 'wb')
+pdfOutput = open(os.path.join(path,'Merged.pdf'), 'wb')
 pdfWriter.write(pdfOutput)
 pdfOutput.close()
+
+print("PDFs successfully merged")
